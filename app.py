@@ -4,6 +4,7 @@ from app.utils import fetch_and_store_earthquake_data
 
 # Create Flask app instance
 app = create_app()
+server = app.app
 
 def run_batch_process():
     """Fetch earthquake data and store it in MongoDB."""
